@@ -1,0 +1,351 @@
+/* Color Scheme */
+:root {
+    --primary-green: #4CAF50;
+    --light-green: #E8F5E9;
+    --earth-brown: #8D6E63;
+    --white: #FFFFFF;
+    --off-white: #F9FAFB;
+    --light-gray: #F5F5F5;
+}
+
+/* Loader Animation */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.tree-animation {
+    animation: grow 2s ease-in-out forwards;
+}
+
+@keyframes grow {
+    0% { transform: scale(0) rotate(0deg); opacity: 0; }
+    50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* SVG Background */
+.svg-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--off-white);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.svg-background svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.crop {
+    transform-origin: center bottom;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: var(--primary-green) !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--earth-brown) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-green) !important;
+}
+
+/* Breadcrumb */
+.breadcrumb-section {
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: var(--earth-brown);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-green);
+}
+
+.breadcrumb-item.active {
+    color: #666;
+}
+
+/* Hero Section (for homepage) */
+.hero {
+    height: 100vh;
+    background: url('images/image1.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--primary-green);
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+.contact-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-details li {
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: var(--earth-brown);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--primary-green);
+}
+
+.contact-details i {
+    color: var(--primary-green);
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--earth-brown);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-green);
+}
+
+.map-placeholder img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Products Section (for products page) */
+.products-section {
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+.product-card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-height: 150px;
+    width: 100%;
+    object-fit:scale-down;
+    border-radius: 4px;
+}
+
+.product-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.product-specs li {
+    margin-bottom: 5px;
+}
+
+/* Features Section (for homepage) */
+#features {
+    background: var(--white);
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-zoom {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom.visible:hover {
+    transform: scale(1.05);
+}
+
+.counter {
+    font-size: 2.5rem;
+    color: var(--earth-brown);
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-outline-primary {
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.btn-hover {
+    transition: transform 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-3px);
+}
+
+/* Backgrounds */
+.bg-light {
+    background-color: var(--light-gray) !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    border-top: 1px solid var(--light-gray);
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-card, .product-card {
+        margin-bottom: 20px;
+    }
+    
+    .svg-background svg {
+        transform: scale(0.8);
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .contact-details li {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+}

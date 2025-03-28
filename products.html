@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSA Agrisciences Pvt Ltd - Products & Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated SVG Background -->
+    <div class="svg-background">
+        <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+            <!-- Wheat -->
+            <g id="wheat" class="crop wheat">
+                <path d="M20 90 Q25 70 30 90 M25 80 Q30 60 35 80" fill="none" stroke="#D4A017" stroke-width="2"/>
+                <animateTransform attributeName="transform" type="translate" from="0 10" to="0 -10" dur="5s" repeatCount="indefinite" additive="sum"/>
+                <animate attributeName="opacity" from="0.3" to="0.7" dur="5s" repeatCount="indefinite"/>
+            </g>
+            <!-- Corn -->
+            <g id="corn" class="crop corn">
+                <path d="M80 85 Q85 65 90 85 L85 75 Q90 55 95 75" fill="#FFC107" opacity="0.5"/>
+                <animateTransform attributeName="transform" type="scale" from="0.9" to="1.1" dur="4s" repeatCount="indefinite" additive="sum"/>
+            </g>
+            <!-- Rice -->
+            <g id="rice" class="crop rice">
+                <path d="M150 90 Q155 70 160 90 M155 80 Q160 60 165 80" fill="none" stroke="#81C784" stroke-width="2"/>
+                <animateTransform attributeName="transform" type="translate" from="0 5" to="0 -5" dur="6s" repeatCount="indefinite" additive="sum"/>
+            </g>
+            <!-- Repeat pattern across screen -->
+            <use href="#wheat" x="200"/>
+            <use href="#corn" x="250"/>
+            <use href="#rice" x="300"/>
+            <use href="#wheat" x="400"/>
+            <use href="#corn" x="450"/>
+            <use href="#rice" x="600"/>
+            <use href="#wheat" x="750"/>
+            <use href="#corn" x="900"/>
+            <use href="#rice" x="1050"/>
+        </svg>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PSA Agrisciences</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products & Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-3 animate-on-scroll">Products</h2>
+            <h4 class="text-center mb-5 animate-on-scroll">Fertilizers</h4>
+            <div class="row">
+                <!-- Amino Acid Organic -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/amino%20acid.jfif" alt="Amino Acid Organic" class="img-fluid mb-3">
+                        <h5>Amino Acid Organic</h5>
+                        <ul class="product-specs">
+                            <li>N: 16</li>
+                            <li>K: 2</li>
+                            <li>Moisture: 1.0% max</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ammonium Chloride Granular -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/amo%20grnular.jfif" alt="Ammonium Chloride Granular" class="img-fluid mb-3">
+                        <h5>Ammonium Chloride Granular</h5>
+                        <ul class="product-specs">
+                            <li>Nitrogen: 25% Min</li>
+                            <li>Size: 2-5mm 90% pass</li>
+                            <li>Moisture: 2.5% Max</li>
+                            <li>Packing: In 50KG/WPP bag</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ammonium Chloride Powder -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/amonium%20powder.jfif" alt="Ammonium Chloride Powder" class="img-fluid mb-3">
+                        <h5>Ammonium Chloride Powder</h5>
+                        <ul class="product-specs">
+                            <li>Nitrogen: 25% Min</li>
+                            <li>Moisture: 1.0% Max</li>
+                            <li>Packing: In 50KG/WPP bag</li>
+                            <li>Origin: China</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ammonium Sulphate (MMA Grade) -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/amonium%20mma.jfif" alt="Ammonium Sulphate (MMA Grade)" class="img-fluid mb-3">
+                        <h5>Ammonium Sulphate (MMA Grade)</h5>
+                        <ul class="product-specs">
+                            <li>Nitrogen: 20.5% Min</li>
+                            <li>Moisture: 2.0% Max</li>
+                            <li>Colour: Yellow Crystalline</li>
+                            <li>Packing: In 40KG/WPP bags</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ammonium Sulphate -->
+<!--
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/" alt="Ammonium Sulphate" class="img-fluid mb-3">
+                        <h5>Ammonium Sulphate</h5>
+                        <ul class="product-specs">
+                            <li>Nitrogen: 21% Min</li>
+                            <li>Moisture: 0.5% Max</li>
+                            <li>Sulphuric Acid: 0.05% Max</li>
+                            <li>Colour: White/Yellow Crystalline</li>
+                        </ul>
+                    </div>
+                </div>
+-->
+                <!-- Ammonium Sulphate Granular -->
+<!--
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/ammonium-sulphate-granular.jpg" alt="Ammonium Sulphate Granular" class="img-fluid mb-3">
+                        <h5>Ammonium Sulphate Granular</h5>
+                        <ul class="product-specs">
+                            <li>Nitrogen: 21% Min</li>
+                            <li>Size: 2-5mm</li>
+                            <li>Moisture: 0.5% Max</li>
+                            <li>Colour: White/Yellow Crystalline</li>
+                        </ul>
+                    </div>
+                </div>
+                 Caustic Calcined Magnesite Powder (CCM) 
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/CCM.jfif" alt="Caustic Calcined Magnesite Powder (CCM)" class="img-fluid mb-3">
+                        <h5>Caustic Calcined Magnesite Powder (CCM)</h5>
+                        <ul class="product-specs">
+                            <li>Total MgO: 91% min</li>
+                            <li>SiO2: <4.0%</li>
+                            <li>L.O.I.: <6.0%</li>
+                        </ul>
+                    </div>
+                </div>
+-->
+                <!-- Compound NP 25-15 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/25-15.jfif" alt="Compound NP 25-15" class="img-fluid mb-3">
+                        <h5>Compound NP 25-15</h5>
+                        <ul class="product-specs">
+                            <li>Origin: Vietnam</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Compound NPK 15-15-15 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/npk.jfif" alt="Compound NPK 15-15-15" class="img-fluid mb-3">
+                        <h5>Compound NPK 15-15-15</h5>
+                        <ul class="product-specs">
+                            <li>Origin: Vietnam</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Compound NPK 16-16-16 -->
+<!--
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card animate-on-scroll">
+                        <img src="images/compound-npk-16-16-16.jpg" alt="Compound NPK 16-16-16" class="img-fluid mb-3">
+                        <h5>Compound NPK 16-16-16</h5>
+                        <ul class="product-specs">
+                            <li>Origin: China</li>
+                        </ul>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-light text-center">
+        <div class="container">
+            <p>© 2025 PSA Agrisciences Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
