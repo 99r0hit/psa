@@ -58,5 +58,7 @@ const animateOnScroll = () => {
     });
 };
 
+document.getElementById('year').textContent = new Date().getFullYear();
+
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
