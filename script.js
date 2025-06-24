@@ -38,6 +38,7 @@ const animateOnScroll = () => {
             element.classList.add('visible');
             // Trigger counter animation for visible counters (not used on products page)
             if (element.classList.contains('counter')) {
+                element.textContent = '0'; // Reset before counting
                 const target = parseInt(element.getAttribute('data-target'));
                 let count = 0;
                 const speed = 50;
