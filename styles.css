@@ -366,3 +366,13 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+footer .social-icon {
+    font-size: 1.5rem;
+    color: var(--earth-brown);
+    transition: color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: var(--primary-green);
+}
