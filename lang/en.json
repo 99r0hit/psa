@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products & Services",
+    "contact": "Contact"
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Fertilizers"
+  }
+}
