@@ -1,60 +1,41 @@
-const translations = {
-  en: {
-    nav: {
-      home: "Home",
-      about: "About Us",
-      products: "Products & Services",
-      contact: "Contact"
-    },
-    products: {
-      title: "Products",
-      subtitle: "Fertilizers"
-    }
-  },
-  hi: {
-    nav: {
-      home: "मुखपृष्ठ",
-      about: "हमारे बारे में",
-      products: "उत्पाद और सेवाएँ",
-      contact: "संपर्क करें"
-    },
-    products: {
-      title: "उत्पाद",
-      subtitle: "उर्वरक"
-    }
-  },
-  mr: {
-    nav: {
-      home: "मुख्यपृष्ठ",
-      about: "आमच्याबद्दल",
-      products: "उत्पादने आणि सेवा",
-      contact: "संपर्क"
-    },
-    products: {
-      title: "उत्पादने",
-      subtitle: "खते"
-    }
-  }
-};
+document.addEventListener("DOMContentLoaded", function () {
+    const langSelect = document.getElementById("languageSelect");
+    const defaultLang = localStorage.getItem("lang") || "en";
 
-function translatePage(language) {
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const keys = element.getAttribute("data-i18n").split(".");
-    let translation = translations[language];
-    keys.forEach((key) => {
-      if (translation) translation = translation[key];
+    function setLanguage(lang) {
+        fetch(`lang/${lang}.json`)
+            .then((res) => res.json())
+            .then((translations) => {
+                document.querySelectorAll("[data-i18n]").forEach((el) => {
+                    const keys = el.getAttribute("data-i18n").split(".");
+                    let value = translations;
+                    keys.forEach((k) => {
+                        if (value && k in value) value = value[k];
+                        else value = null;
+                    });
+                    if (value) {
+                        el.textContent = value;
+                    }
+                });
+
+                // If footer contains year injection
+                const footer = document.querySelector("footer");
+                if (footer && translations.footer && translations.footer.rights) {
+                    const year = new Date().getFullYear();
+                    footer.querySelector("p").innerText = translations.footer.rights.replace("{{year}}", year);
+                }
+            })
+            .catch((err) => console.error("Translation load error:", err));
+    }
+
+    // Set default language on load
+    langSelect.value = defaultLang;
+    setLanguage(defaultLang);
+
+    // Change language on select change
+    langSelect.addEventListener("change", function () {
+        const selectedLang = this.value;
+        localStorage.setItem("lang", selectedLang);
+        setLanguage(selectedLang);
     });
-    if (translation) {
-      element.textContent = translation;
-    }
-  });
-}
-
-document.getElementById("languageSelect").addEventListener("change", (e) => {
-  const selectedLang = e.target.value;
-  translatePage(selectedLang);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  translatePage("en"); // Default language
 });
