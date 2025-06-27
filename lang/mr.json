@@ -2,11 +2,45 @@
   "nav": {
     "home": "मुखपृष्ठ",
     "about": "आमच्याबद्दल",
-    "products": "उत्पादने व सेवा",
+    "products": "उत्पादने आणि सेवा",
     "contact": "संपर्क"
+  },
+  "breadcrumb": {
+    "home": "मुखपृष्ठ",
+    "about": "आमच्याबद्दल",
+    "products": "उत्पादने",
+    "contact": "संपर्क"
+  },
+  "home": {
+    "welcome": "कृषीचे भविष्य घडवित आहोत",
+    "intro": "PSA Agrosciences Pvt Ltd ही कृषीक्षेत्रात शाश्वत आणि नवोन्मेषी सोल्युशन्ससाठी अग्रगण्य कंपनी आहे.",
+    "learn_more": "अधिक जाणून घ्या"
+  },
+  "about": {
+    "title": "PSA Agrosciences बद्दल",
+    "description": "PSA Agrosciences Pvt Ltd शाश्वत, वैज्ञानिक दृष्टिकोनातून कृषी परिवर्तनासाठी शेतकऱ्यांना सशक्त करत आहे.",
+    "farmers": "सशक्त शेतकरी",
+    "yield": "सरासरी उत्पादन वाढ (%)",
+    "countries": "सेवा दिलेले देश",
+    "get_in_touch": "संपर्क साधा"
   },
   "products": {
     "title": "उत्पादने",
     "subtitle": "खते"
+  },
+  "contact": {
+    "title": "आमच्याशी संपर्क साधा",
+    "get_in_touch": "आमच्याशी संपर्क साधा",
+    "description": "कृपया आपल्या शंका व विचार आमच्यापर्यंत पोहोचवा.",
+    "email": "ईमेल : info@psaagrosciences.com",
+    "phone": "संपर्क : +91 9373522408",
+    "address": "पत्ता : PSA Agrosciences Pvt Ltd, नाशिक, भारत",
+    "visit_us": "नाशिक, महाराष्ट्र, भारत येथे आमच्या मुख्यालयात भेट द्या.",
+    "questions": "काही प्रश्न आहेत?",
+    "team_support": "आमची टीम आपल्याला कृषीशी संबंधित गरजांबाबत मदत करण्यासाठी तत्पर आहे.",
+    "email_now": "आत्ता ईमेल करा"
+  },
+  "footer": {
+    "rights": "© {{year}} PSA Agrosciences Pvt Ltd. सर्व हक्क राखीव."
   }
 }
