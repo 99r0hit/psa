@@ -1,12 +1,46 @@
 {
   "nav": {
-    "home": "होम",
+    "home": "मुखपृष्ठ",
     "about": "हमारे बारे में",
     "products": "उत्पाद और सेवाएं",
     "contact": "संपर्क करें"
   },
+  "breadcrumb": {
+    "home": "मुखपृष्ठ",
+    "about": "हमारे बारे में",
+    "products": "उत्पाद",
+    "contact": "संपर्क करें"
+  },
+  "home": {
+    "welcome": "हम कृषि का भविष्य बना रहे हैं",
+    "intro": "PSA Agrosciences Pvt Ltd कृषि में नवाचार और स्थिरता प्रदान करने वाली अग्रणी कंपनी है।",
+    "learn_more": "और जानें"
+  },
+  "about": {
+    "title": "PSA Agrosciences के बारे में",
+    "description": "PSA Agrosciences Pvt Ltd वैज्ञानिक दृष्टिकोण से किसानों को सशक्त बनाकर कृषि में परिवर्तन ला रही है।",
+    "farmers": "सशक्त किसान",
+    "yield": "औसत उपज वृद्धि (%)",
+    "countries": "सेवा देने वाले देश",
+    "get_in_touch": "संपर्क करें"
+  },
   "products": {
     "title": "उत्पाद",
     "subtitle": "उर्वरक"
+  },
+  "contact": {
+    "title": "हमसे संपर्क करें",
+    "get_in_touch": "संपर्क में रहें",
+    "description": "हमसे किसी भी प्रश्न या जानकारी के लिए संपर्क करें।",
+    "email": "ईमेल : info@psaagrosciences.com",
+    "phone": "संपर्क : +91 9373522408",
+    "address": "पता : PSA Agrosciences Pvt Ltd, नासिक, भारत",
+    "visit_us": "नासिक, महाराष्ट्र, भारत में हमारे मुख्यालय पर पधारें।",
+    "questions": "कोई सवाल है?",
+    "team_support": "हमारी टीम आपकी कृषि संबंधी ज़रूरतों में सहायता के लिए तैयार है।",
+    "email_now": "अभी ईमेल करें"
+  },
+  "footer": {
+    "rights": "© {{year}} PSA Agrosciences Pvt Ltd. सर्वाधिकार सुरक्षित।"
   }
 }
